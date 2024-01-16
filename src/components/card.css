@@ -1,0 +1,80 @@
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+    transition: all 0.7s linear;
+}
+
+.card{
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273);
+    transition: all 0.7s linear;
+    margin: 1rem 0;
+}
+
+.card2{
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  transition: all 0.7s linear;
+  margin: 1rem 0;
+}
+
+.card-body {
+    padding: 1rem 4rem !important;
+}
+
+.card-title {
+    padding: 0.1rem 0;  /* Ajusta el espacio del título */
+    font-size: 1.1rem;
+}
+
+.card-text {
+    padding: 0rem 0;  /* Ajusta el espacio del texto */
+    font-size: 1rem;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.card-img-top {
+    margin-top: 1.5rem;
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.card-img-top:hover {
+    transform: scale(0.95);
+}
+
+.button-card {
+    padding: 0.5rem 1.5rem;
+}
+.button-card:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+
+    }
+    
+
+
+  /* card.css */
+
+  .card-additional-title {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo del título adicional */
+    color: #fff; /* Color del texto del título adicional */
+    padding: 10px; /* Espaciado interno del título adicional */
+    margin-bottom: 10px; /* Margen inferior del título adicional */
+    border-radius: 5px; /* Borde redondeado del título adicional */
+    font-size: 1.2rem; /* Tamaño del texto del título adicional */
+    width: 40%; /* Ajustar el ancho al contenido */
+    margin: 0 auto; /* Centrar el título adicional horizontalmente */
+    margin-top: 20px;
+  }
+
+  .no-image {
+    max-height: 50%; /* o ajusta el tamaño según tus preferencias */
+  }
+
