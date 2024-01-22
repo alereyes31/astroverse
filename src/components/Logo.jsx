@@ -1,4 +1,4 @@
-import logoImage from '../assets/Logo-removebg.png'; // Ruta correcta a tu imagen
+import logoImage from '../assets/Logo-removebg.png'; 
 
 const Logo = () => {
   return (

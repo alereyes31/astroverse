@@ -10,7 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@expo-google-fonts/orbitron": "^0.2.3",
+    "@fontsource/orbitron": "^5.0.18",
+    "@fontsource/urbanist": "^5.0.18",
     "antd": "^5.12.4",
+    "expo-app-loading": "^2.1.1",
+    "expo-font": "^11.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

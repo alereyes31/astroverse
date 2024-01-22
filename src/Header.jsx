@@ -1,28 +1,56 @@
-// Header1.js
 import { Button } from 'antd';
-import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
-import vartaLogo from './assets/varta.png';
-import metamaskLogo from './assets/metamask.png';
+import collectwallet from './assets/collectwallet.png';
+import LogoFull from './assets/Logo-Full.png';
+import LogoCorto from './assets/Logo-Corto.png';
+import './Header.css';
 
 // eslint-disable-next-line react/prop-types
-const Header1 = ({ collapsed, toggleCollapsed }) => {
+const Header1 = () => {
   return (
     <>
-      <div>
-        <Button
-          type="text"
-          style={{ color: 'rgba(255, 255, 255, 0.65)' }}
-          icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          onClick={toggleCollapsed}
+      <div style={{ display: 'flex', alignItems: 'center', marginRight: '10px' }}>
+        <img
+          src={LogoCorto}
+          alt="Logo 1"
+          style={{
+            marginRight: '-10px',
+            height: '90px',
+            verticalAlign: 'middle',
+            marginTop: '15px',
+          }}
+          className="show-on-mobile"
+        />
+        <img
+          src={LogoFull}
+          alt="Logo 2"
+          style={{
+            marginRight: '5px',
+            height: '120px',
+            verticalAlign: 'middle',
+            marginTop: '15px',
+          }}
+          className="hide-on-mobile"
         />
       </div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Button type="text" style={{ color: 'rgba(255, 255, 255, 0.65)' }}>
-          <img src={vartaLogo} alt="Varta Logo" style={{ marginRight: '5px', height: '20px', verticalAlign: 'middle' }} />
-          Claim 0 VARTA
-        </Button>
-        <Button type="text" style={{ color: 'rgba(255, 255, 255, 0.65)' }}>
-          <img src={metamaskLogo} alt="Metamask Logo" style={{ marginRight: '5px', height: '20px', verticalAlign: 'middle' }} />
+        <Button
+          type="text"
+          style={{
+            color: 'rgba(255, 255, 255, 0.65)',
+            border: '3px solid rgba(255, 255, 255, 0.65)',
+            borderRadius: '12px',
+            padding: '20px 10px',
+            display: 'flex',
+            alignItems: 'center',
+            marginTop: '15px',
+            fontWeight: 'bold',
+          }}
+        >
+          <img
+            src={collectwallet}
+            alt="Metamask Logo"
+            style={{ marginRight: '5px', height: '30px', verticalAlign: 'middle' }}
+          />
           Connect Wallet
         </Button>
       </div>

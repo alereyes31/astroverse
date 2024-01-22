@@ -1,15 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
-import Logo from "./components/Logo";
-import MenuList from "./components/MenuList";
 import { useState } from 'react';
 import Header1 from './Header';
 import MinesSection from './components/MinesSection';
-import  SoldiersSection  from './components/SoldiersSection';
-import ConquestSection from './components/ConquestSection';
-import ComingSoon from './components/Comingsoon';
+import bg from './assets/bg.jpg';
 
-const { Header, Sider } = Layout;
+
+const { Header } = Layout;
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -21,26 +18,21 @@ function App() {
   return (
     <BrowserRouter>
       <Layout style={{ minHeight: '100vh' }}>
-        <Sider
-          className='sidebar'
-          collapsible
-          collapsed={collapsed}
-          onCollapse={toggleCollapsed}
-        >
-          <Logo />
-          <MenuList />
-        </Sider>
+
         <Layout>
-          <Header style={{ padding: 0, background: '#001529', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Header style={{
+            padding: 20,
+            backgroundImage: `url(${bg})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}>
             <Header1 collapsed={collapsed} toggleCollapsed={toggleCollapsed} />
           </Header>
           <Routes>
             <Route path="/" element={<MinesSection />} />
-            <Route path="/soldiers" element={<SoldiersSection />} />
-            <Route path="/conquest" element={<ConquestSection />} />        
-            <Route path="/mines" element={<ComingSoon />} />      
-            <Route path="/soldiersm" element={<ComingSoon />} />                
-          
           </Routes>
         </Layout>
       </Layout>
@@ -49,3 +41,4 @@ function App() {
 }
 
 export default App;
+

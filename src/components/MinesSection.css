@@ -1,17 +1,20 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
+  font-family: 'Orbitron';
 }
 
-/* Media Query para pantallas más pequeñas */
+.button-card {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-family: 'Urbanist';
+}
+
+
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas más pequeñas */
-  }
+    grid-template-columns: 1fr;
+}
 }
 
 .section-container {
@@ -29,12 +32,12 @@
   z-index: -1;
 }
 
-/* Añadir un borde a las cartas para visualizar su límite */
+
 .card {
   border: 1px solid #fff;
 }
 
-/* Establecer un fondo gris cuando la pantalla es más pequeña */
+
 @media (max-width: 768px) {
   .section-background {
     background-color: #555;
