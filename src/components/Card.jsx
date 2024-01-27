@@ -3,7 +3,7 @@ import "./card.css";
 import '@fontsource/urbanist'
 
 // eslint-disable-next-line react/prop-types
-function Card({ title, additionalTitle, text, percentages, image, onClick, buttonText, buttonText2, style }) {
+function Card({ title, additionalTitle, text, percentages, image, onClick, buttonText, buttonText2, style, text2 }) {
   const hasImage = image !== undefined && image !== null;
 
   return (
@@ -16,9 +16,13 @@ function Card({ title, additionalTitle, text, percentages, image, onClick, butto
       <div className="card-body text-light" style={style}>
         {additionalTitle && <h5 className="card-additional-title">{additionalTitle}</h5>}
         <p className="card-text text-secondary">{title}</p>
+        <p className="card-text2 text-secondary">
+          {text2 ? text2 : " "}
+        </p>
         <p className="card-text text-secondary">
           {text ? text : " "}
         </p>
+
         <div className="additional-info">
           <div className="circle-container">
             {percentages.map((percentage, index) => (

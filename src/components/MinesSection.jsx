@@ -22,6 +22,7 @@ const MinesSection = () => {
     maxWidth: '1200px',
     margin: 'auto',
     textAlign: 'center',
+    marginTop: '-3rem',
   };
 
   const horizontalLineStyle = {
@@ -49,18 +50,36 @@ const MinesSection = () => {
     fontFamily: 'Orbitron',
     textShadow: '2px 2px 5px rgba(255, 255, 255, 0.8)',  // Sombra hacia la derecha y hacia abajo
   };
+
+  const titleStyle2 = {
+    fontSize: '1.8em',
+    marginBottom: '1.26rem',
+    marginTop: '1rem',
+    textAlign: 'center',
+    backgroundImage: 'linear-gradient(45deg, #775DFD, #FFEA07, #FFEA02, #FFFF00)',  // Degradado con amarillo
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    fontFamily: 'Orbitron',
+    textShadow: '2px 2px 5px rgba(255, 255, 255, 0.8)',  // Sombra hacia la derecha y hacia abajo
+  };
+  
+  
   
 
   return (
     <div style={sectionStyle}>
       <div style={horizontalLineStyle}></div>
       <h1 style={titleStyle}>Presale Chests</h1>
+      <h1 style={titleStyle2}>10% Discount on all chests</h1>
+      <h1 style={titleStyle2}>(Limited Units)</h1>
+
       <div style={horizontalLineStyle2}></div>
       <main className="grid col-4 med-col-2 peq-col-1">
         <div style={cardContainerStyle}>
         <Card
   title="Common Chest"
   text="$ 45.00"
+  text2="$ 50.00"
   image={comunChestImage}
   buttonText="BUY NOW"
   percentages={[
@@ -74,6 +93,7 @@ const MinesSection = () => {
 <Card
   title="Epic Chest"
   text="$ 90.00"
+  text2="$ 100.00"
   image={epicChestImage}
   buttonText="BUY NOW"
   percentages={[
@@ -87,6 +107,8 @@ const MinesSection = () => {
 <Card
   title="Legendary Chest"
   text="$ 180.00"
+  text2="$ 200.00"
+
   image={legendChestImage}
   buttonText="BUY NOW"
   percentages={[

@@ -36,7 +36,23 @@
     padding: 0rem 0;
     font-size: 1rem;
   }
-  
+
+  .card-text2 {
+    position: relative;
+    padding: 0rem 0;
+    font-size: 1rem;
+}
+
+.card-text2::after {
+  content: "";
+  position: absolute;
+  bottom: 50%; /* Ajusta la posición vertical de la línea para centrarla */
+  left: 50%; /* Ajusta la posición horizontal de la línea para centrarla */
+  width: 35%; /* Ajusta la longitud de la línea */
+  height: 1.5px; /* Grosor de la línea */
+  background-color: white; /* Color de la línea */
+  transform: translate(-45%, 0) skewY(-15deg); /* Centra la línea horizontalmente y aplica la inclinación */
+}
   .button-container {
     margin-top: 25px;
   }
